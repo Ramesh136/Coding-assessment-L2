@@ -4,7 +4,6 @@ var itemList = document.getElementById("product-list");
 var body = document.getElementsByTagName("body")
 
 window.addEventListener("load", async function(){
-    console.log('ok')
     const data = await fetch("https://cdn.shopify.com/s/files/1/0564/3685/0790/files/multiProduct.json")
     const json = await data.json() 
     let htmlCode = ``;
@@ -33,17 +32,12 @@ window.addEventListener("load", async function(){
         `
     });
     itemList.innerHTML = htmlCode
-    console.log(htmlCode)
 
 });
-
-console.log(box)
 var index = 0
 for(var i = 0 ;i<box.length ;i++){
     box[i].addEventListener("click", async function(e){
-        console.log(e)
     const text = e.srcElement.childNodes[0].data
-    console.log(text)
     if(text == '👦Men'){
         index=0
     }
@@ -57,7 +51,6 @@ for(var i = 0 ;i<box.length ;i++){
     const json = await data.json()   
     let htmlCode = ``;
     json.categories[index].category_products.forEach(item => {
-            console.log(item)
             const result =100- Math.round((item.price / item.compare_at_price) * 100)
             htmlCode =htmlCode +
             `<div class="card">
@@ -82,7 +75,6 @@ for(var i = 0 ;i<box.length ;i++){
             `
         });
         itemList.innerHTML = htmlCode
-        console.log(htmlCode)
     })
     
 }
