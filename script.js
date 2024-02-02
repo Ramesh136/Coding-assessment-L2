@@ -19,14 +19,14 @@ window.addEventListener("load", async function(){
         height="220"/>
         <h4 class= 'offer'>${item.badge_text?item.badge_text:''}</h4>
         <div class='name'>
-        <h5 style="margin:0;  padding-top: 5%; width: 100px;overflow: hidden; height:16px ;">${item.title}  </h5>
+        <h5 class = 'title'>${item.title}  </h5>
         <small style="padding-top: 5%;">from ${item.vendor}</small>
         </div>
         
         <div class="price">
             <h5 style="margin:0;  padding-top: 5%;">Rs ${item.price}</h5>
-            <h5 style="text-decoration: line-through; margin-left:4%; color: darkgrey; margin-top: 0; margin-bottom: 0;padding-top: 5%;">${item.compare_at_price}</h5>
-            <h5 style="color: red;margin-left: 8%;  margin-top: 0; margin-bottom: 5%;padding-top: 5% ;">${result}% off</h5>
+            <h5 class = 'compare' >${item.compare_at_price}</h5>
+            <h5 class ='discount' >${result}% off</h5>
         </div>
         <button class="button">Add to Cart</button>
         </div>
@@ -68,14 +68,14 @@ for(var i = 0 ;i<box.length ;i++){
             height="220"/>
             <h4 class= 'offer'>${item.badge_text?item.badge_text:''}</h4>
             <div class='name'>
-            <h5 style="margin:0;  padding-top: 5%; width: 100px;overflow: hidden; height:16px ;">${item.title}  </h5>
+            <h5 class = 'title'>${item.title}  </h5>
             <small style="padding-top: 5%;">from ${item.vendor}</small>
             </div>
             
             <div class="price">
                 <h5 style="margin:0;  padding-top: 5%;">Rs ${item.price}</h5>
-                <h5 style="text-decoration: line-through; margin-left:4%; color: darkgrey; margin-top: 0; margin-bottom: 0;padding-top: 5%;">${item.compare_at_price}</h5>
-                <h5 style="color: red;margin-left: 8%;  margin-top: 0; margin-bottom: 5%;padding-top: 5% ;">${result}% off</h5>
+                <h5 class = 'compare'>${item.compare_at_price}</h5>
+                <h5 class ='discount'>${result}% off</h5>
             </div>
             <button class="button">Add to Cart</button>
             </div>

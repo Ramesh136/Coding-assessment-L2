@@ -107,4 +107,28 @@ body {
   border-radius: 2px;
 }
 
+.title {
+  margin:0;  
+  padding-top: 5%; 
+  width: 90px;
+  overflow: hidden; 
+  height:16px ;
+}
+
+.compare {
+  text-decoration: line-through; 
+  margin-left:4%; 
+  color: darkgrey; 
+  margin-top: 0; 
+  margin-bottom: 0;
+  padding-top: 5%;
+}
+
+.discount {
+  color: red;
+  margin-left: 8%;  
+  margin-top: 0; 
+  margin-bottom: 5%;
+  padding-top: 5% ;
+}
 
