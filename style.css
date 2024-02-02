@@ -140,6 +140,15 @@ body {
     margin-left: 25%;
     /* margin-right: 10%; */
   }
+  .header {
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    
+  }
 }
 
 @media only screen and (max-width: 1024px) {
